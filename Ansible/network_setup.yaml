@@ -1,0 +1,8 @@
+- name: Ping Pong Play
+  hosts: cluster
+  tasks:
+    - name: Ping my hosts
+      ansible.builtin.ping:
+      
+    - name: Copy and execute the script
+      script: ./network_setup.sh
